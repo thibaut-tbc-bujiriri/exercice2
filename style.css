@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root{
     --my-color-gris: #f5f5dc;
     --my-color-gris-fonce: #3d535f;
@@ -5,16 +7,16 @@
 
 }
 *{
-    font-family: "Source Code Pro", serif;
+    font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: weight;
     font-style: normal;
+    font-variation-settings: 100;
     margin: 0px;
     padding: 0px;
     list-style-type: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
 }
 .logos{
     display: flex;
@@ -39,6 +41,8 @@ body{
     height: 80px;
     line-height: 80px;
     z-index: 111;
+    border-radius: 15px;
+    background-color: var(--my-color-gris);
 }
 .logo{
     display: flex;
@@ -48,10 +52,6 @@ body{
     letter-spacing: 2px;
     cursor: pointer;
     text-transform: uppercase;
-}
-b{
-    font-size: 70px;
-    color: var(--my-color-jaune);
 }
 .logo span{
     color: var(--my-color-jaune);
@@ -64,15 +64,16 @@ b{
 }
 .menu li a{
     font-size: 20px;
+    font-weight: 600;
     color:  #3d535f;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: capitalize;
 }
-.reseaux{
+.reseaux a{
     font-size: 30px;
     color: var(--my-color-gris-fonce);
-    margin: 8px 8px;
-    letter-spacing: 10px;
+    margin: 8px 10px;
+    letter-spacing: 3px;
 }
 .menu li:hover a, .reseaux a:hover{
     color: var(--my-color-jaune);
@@ -155,13 +156,16 @@ button:hover{
     right: -25px;
     top: 5px;
     animation: animateImg 5s linear infinite;
-    animation: bounce 20s linear infinite alternate;
+    background-color: var(--my-color-gris);
+    border-radius: 1000px;
+    padding: 30px 30px;
+    /* animation: bounce 10s linear infinite alternate; */
 }
-@keyframes bounce{
+/* @keyframes bounce{
     to{
         rotate: -360deg;
     }
-}
+} */
 /* @keyframes animateImg{
     50%{
         right: 10px;
