@@ -240,7 +240,6 @@ button:hover{
 
     .entete {
         flex-direction: column;
-        /* height: auto; */
         line-height: normal;
         text-align:right;
         background-color: purple;
@@ -288,13 +287,15 @@ button:hover{
     }
     .reseaux{
         gap: 1px;
+        display: block;
+        margin: 400px 0px 20px 15%;
     }
     .reseaux a{
         display: block;
-        justify-content: left;
+        justify-content: right;
         align-items: center;
-        margin: 30px 3px 5px 0px;
         color: purple;
+        margin: 10px 0px 20px 90%;
     }
     .reseaux a:hover{
         color: blue;
