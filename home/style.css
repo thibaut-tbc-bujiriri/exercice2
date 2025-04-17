@@ -6,7 +6,7 @@
     --my-color-jaune: #ffe800;
 
 }
-*{
+* {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -18,6 +18,15 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+/* pre{ 
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: 100;
+    font-weight: 500;
+    color: var(--my-color-gris-fonce);
+    font-size: 20px;
+} */
+
 .logos{
     display: flex;
     align-items: center;
@@ -38,7 +47,7 @@ body{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    height: 80px;
+    height: 60px;
     line-height: 80px;
     z-index: 111;
     background-color: var(--my-color-gris);
@@ -62,20 +71,24 @@ body{
     margin: 0 15px;
 }
 .menu li a{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
     color:  #3d535f;
     letter-spacing: 1px;
     text-transform: capitalize;
+    top: -10px;
+    position: relative;
 }
 .reseaux a{
-    font-size: 30px;
+    font-size: 25px;
     color: var(--my-color-gris-fonce);
     margin: 8px 10px;
     letter-spacing: 3px;
+    top: -10px;
+    position: relative;
 }
 .menu li:hover a, .reseaux a:hover{
-    color: var(--my-color-jaune);
+    color: rgb(202, 140, 96);
 }
 .coprs{
     display: flex;
@@ -105,7 +118,7 @@ body{
     height: 4px;
     width: 45px;
     bottom: 10px;
-    background-color: var(--my-color-jaune);
+    background-color: rgb(219, 142, 87);
 }
 h1{
     display: block;
@@ -129,7 +142,7 @@ button{
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     background-color: var(--my-color-gris-fonce);
     color: white;
@@ -138,10 +151,13 @@ button{
     border-radius: 8px;
     letter-spacing: 2px;
     text-transform: capitalize;
-    box-shadow: 0 15px 10px rgba(0,0,0.4);
+    box-shadow: 0 10px 10px rgb(180, 176, 176);
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
 }
 button:hover{
-    background-color: var(--my-color-jaune);
+    background-color: rgb(202, 140, 96);
+    transform: translateY(-10px);
 }
 .groupeImg{
     position: relative;
@@ -210,7 +226,7 @@ button:hover{
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background: linear-gradient(45deg,#ffe800,pink);
+    background: linear-gradient(45deg,rgb(202, 140, 96),pink);
     left: 12%;
     top: 40%;
     animation: afterAnime 6s linear infinite;
@@ -222,7 +238,7 @@ button:hover{
     }
 }
 #textDefil{
-    color: var(--my-color-jaune);
+    color: rgb(202, 140, 96);
     font-weight: 900;
 }
 
@@ -342,3 +358,80 @@ button:hover{
         border-radius: 200px;
     }
 }
+
+/* -----------------------suite------------------------------------- */
+
+#about{
+    margin: 3px;
+    /* border-radius: 5px;
+    border: solid; */
+    padding: 115px 115px;
+    border-width: 1px;
+    border-color: rgb(228, 215, 215);
+    /* box-shadow: 0 4px 8px rgba(32, 32, 32, 0.2); */
+}
+.return{
+    position: relative;
+    top: -60px;
+}
+.return a{
+    position:absolute;
+    font-size: 30px;
+    top: -40px;
+    left: -80px;
+}
+
+#about p {
+    position: relative;
+    top: -250px; /* monte de 20px */
+    margin-left: 300px;
+    float: left;
+    display: block;
+    overflow: hidden;
+    width: 70%;
+}
+.ti{
+    font-size: 100px;
+    font-weight: 900;
+}
+#about img{
+    width: 250px;
+    height: 250px;
+    border: solid;
+    border-width: 10px;
+    margin: 10px 0px 0px 0px;
+    border-color: rgb(228, 215, 215);
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: thibaut 15s linear infinite;
+    /* transform: translateY(0);
+    transition: transform 0.3s ease-in-out; */
+}
+@keyframes thibaut{
+    50%{
+        rotate: -360deg;
+        border-color: var(--my-color-gris-fonce);
+        box-shadow: 0 4px 8px rgba(32, 32, 32, 0.2);
+    }
+}
+
+.rezeau {
+    position: relative;   /* Nécessaire pour que top fonctionne */
+    top: -350px;             /* 50px vers le bas */
+    margin-left: 489px;
+    gap: 5px;
+}
+.rezeau h2{
+    position: relative;
+    top: -200px;
+    margin-left: 50px;
+}
+
+#skills {
+    height: auto; /* ✅ ou pas de hauteur du tout */
+    overflow: visible;
+    scroll-margin-top: 80px; /* pour éviter qu'un header fixe ne cache */
+    padding-bottom: 100px;   /* pour laisser de la place en bas */
+  }  
