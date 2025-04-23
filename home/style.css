@@ -357,7 +357,67 @@ button:hover{
         background-color: lightblue;
         border-radius: 200px;
     }
+
+    /* ------------------media suite---------------- */
+
+    #about {
+        padding: 10px;
+      }
+    
+      #about button {
+        position: relative;
+        top: -135px;
+        font-size: 10px;
+        padding: 6px 12px;
+        border-radius: 0px;
+        right: 25px;
+      }
+      .profil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }    
+      .profil .ti{
+        font-size: 50px;
+      }
+    
+     #about .profil p {
+        position: relative;
+        top: -100px; /* monte de 20px */
+        margin-left: 300px;
+        display: block;
+        width: 100%;
+    }        
+      .rezeau h2 {
+        font-size: 18px;
+      }
+    
+      .rezeau p {
+        position: relative;
+        font-size: 14px;
+        right: 400px;
+      }
+    
+      #about img.rot {
+        position: relative;
+        top: -220px;
+        right: -155px;
+        border-radius: 1px;
+        border-width: 0px;
+        width: 80px;
+        height: 50px;
+        animation: none;
+      }
+    
+      .return a {
+        font-size: 20px;
+        top: 10px;
+        left: 10px;
+      }
 }
+
 
 /* -----------------------suite------------------------------------- */
 
@@ -381,13 +441,11 @@ button:hover{
     left: -80px;
 }
 
-#about p {
+#about .profil p {
     position: relative;
     top: -250px; /* monte de 20px */
     margin-left: 300px;
-    float: left;
     display: block;
-    overflow: hidden;
     width: 70%;
 }
 .ti{
